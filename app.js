@@ -5,7 +5,6 @@ let mongo = require('mongodb')
 let MongoClient = mongo.MongoClient;
 let mongourl =process.env.MONGODB_URI || 'mongodb+srv://YamanayyaBG:Yama1234@flip-kart.gvmpppq.mongodb.net/Flip-kart?retryWrites=true&w=majority'
 const port =process.env.PORT || 5000;
-let database;
 let db;
 
 /////
@@ -17,7 +16,7 @@ app.get('/', (req, res) => {
 
 })
 app.get('/Dress', (req, res) => {
-   database.collection('Dress').find().toArray((err, data) => {
+   d.collecbtion('Dress').find().toArray((err, data) => {
         if (err) throw err;
         res.send(data)
     })
