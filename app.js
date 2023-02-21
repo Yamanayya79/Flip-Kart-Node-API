@@ -4,7 +4,9 @@ const app = express()
 let mongo = require('mongodb')
 let MongoClient = mongo.MongoClient;
 let mongourl =process.env.MONGODB_URI || 'mongodb+srv://YamanayyaBG:Yama1234@flip-kart.gvmpppq.mongodb.net/Flip-kart?retryWrites=true&w=majority'
-const port =process.env.PORT || 5000;
+let dotenv = require('dotenv')
+dotenv.config()
+let port = process.env.PORT || 5000;
 let db,database;
 
 /////
