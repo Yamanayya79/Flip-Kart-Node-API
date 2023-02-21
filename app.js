@@ -5,7 +5,7 @@ let mongo = require('mongodb')
 let MongoClient = mongo.MongoClient;
 let mongourl =process.env.MONGODB_URI || 'mongodb+srv://YamanayyaBG:Yama1234@flip-kart.gvmpppq.mongodb.net/Flip-kart?retryWrites=true&w=majority'
 const port = 5000
-let db
+let db;
 
 /////
 app.use(cors());
